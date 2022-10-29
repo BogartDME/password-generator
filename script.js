@@ -14,17 +14,18 @@ const specialCharacters =["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "?",
 let possibleCharacters =[]
 
 function askUser (userName){
-  
+  //
   const passLength= parseInt(window.prompt("Hi " + userName + "Choose how many characters your password should be"))
   if (passLength<8 ||passLength>128){
     alert("Please choose a valid number between 8 and 128")
-    return;
+    return; // if true return will return to the function and start over. If false it will continue to the next if
   } 
   
-  if (passLength=== NaN){
+  if (isNaN(passLength)){
     alert("Please choose a valid number")
     return;
   }
+
   const responseLower = confirm("Would you like your password to contain lowercase letters?")
   console.log (responseLower)
   if (responseLower) {
