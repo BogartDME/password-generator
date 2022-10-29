@@ -3,7 +3,6 @@ var generateBtn = document.querySelector("#generate");
 //create the event click to make the promply appear
 
 
-function generatePassword(){ 
 
 
 //create the arrays for the password character types
@@ -13,8 +12,17 @@ const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 const special = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "?", "/", ">", "<", "."]
 var possibleCharacters =[]
 
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
 
-  //
+  passwordText.value = password;
+
+}
+
+function generatePassword(){ 
+
+  
   const passLength= parseInt(window.prompt("Hello, human. Choose how many characters your password should be"))
   if (passLength<8 ||passLength>128){
     alert("Please choose a valid number between 8 and 128")
@@ -94,17 +102,10 @@ var possibleCharacters =[]
   // var name = "human ";  
   // var options = greetUser(name)
   // console.log (options)
-// return "fake password"
-
+  // return "fake password"
+  
 
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
