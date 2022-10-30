@@ -57,7 +57,7 @@ function generatePassword(){
   
   //create confirm for special characters (Y, N)
   const responseSpecial = confirm("Would you like your password to contain special characters?")
-  console.log (possibleCharacters);
+  console.log (possibleCharacters)
   if (responseSpecial) {
     possibleCharacters=possibleCharacters.concat(special)
   }
