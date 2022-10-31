@@ -57,32 +57,34 @@ function generatePassword(){
   
   //create confirm for special characters (Y, N)
   const responseSpecial = confirm("Would you like your password to contain special characters?")
-  console.log (possibleCharacters)
+  console.log(responseSpecial)
+  
   if (responseSpecial) {
     possibleCharacters=possibleCharacters.concat(special)
   }
+  console.log (possibleCharacters)
   if(possibleCharacters.length===0){
-    alert("Please choose atleast one character type")
+    alert("Choose atleast one character type, human!")
   
     
   }
  
   let password= " ";
   
-  for (var i = 0; i < passLength; i++)
-  
-  {var endResult = Math.floor(Math.random() * possibleCharacters.length);}
+for (var i = 0; i < passLength; i++){
+    
+  var endResult = Math.floor(Math.random() * possibleCharacters.length);
   // return {possibleCharacters, passLength}
   
   password += possibleCharacters[endResult]
   console.log (endResult)
   console.log (password)
-  
-  
+}
+return password;
   
 }
 
-// return password;
+
 
 //for loop to create password with user input 
 
