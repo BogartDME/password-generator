@@ -7,6 +7,11 @@ Creating an application that assists in creating a randomized password with char
 
 This is an application to assist users in creating random passwords and ensuring account security. THe application uses prompts and alerts that the user interacts with to create the settings for their password. First the user chooses their desired password length. The user then follows a series of alerts to choose the charaters making up the password- uppercase, lowercase, numbers, and/or special characters. If the minimum input from the user is not met they will be given an alert stating so and the the process will repeat. Once the input criteria is met the application will randonly generate a password and display it on the page.
 
+## Visuals
+
+![Screenshot of my working application](/projects/password-generator/assets/Screen%20Shot%202022-10-31%20at%205.57.28%20PM.png)
+
+
 ## Access 
 
 You can access the password generator on the live page: https://bogartdme.github.io/password-generator/
@@ -30,4 +35,4 @@ You can contact me via my Github account or email me at edwin.pietrowski@gmail.c
 
 
 
-T
+
